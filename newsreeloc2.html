@@ -24,11 +24,12 @@
 
 <body>
     <!-- Preloader Start -->
-    
+   
 
     <!-- Background Pattern Swither -->
-    <a href="contact.html" ><div id="pattern-switcher">
-        Contact
+	
+    <a  ><div id="pattern-switcher">
+        <button id="myBtn" class="button">CONTACT</button>
     </div></a>
     <div id="patter-close">
         <i class="fa fa-times" aria-hidden="true"></i>
@@ -82,6 +83,9 @@ function myFunction() {
             <li>
                 <a href="sagarquotes.html">Sagar Quotes</a>
             </li>
+			<li>
+                <a href="sagarquotes.html">Purvodaya</a>
+            </li>
             <li>
                 <a href="#">Occasional</a>
             </li>
@@ -95,20 +99,24 @@ function myFunction() {
 <!--Left Side Buttons Start-->	
       <div class="sticky-left-container">
         <ul class="sticky-left">
-          <li>
+          <a href="tel:+918585876935"><li>
             <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1yz1jMRdqLQWBx10eFLSWTMGWmKrL9sM6"/>
             <p style="color:white">Phone</p>
           </li>
-          <li>
+          <li></a>
             <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1ha6UAQlGBFXnExIXUMgs2l1QwUNgE09K" />
             <p style="color:white">Whatsapp</p>
           </li>
-          <li>
+          <a href="mailto:iscsindiaoffice@gmail.com"><li>
             <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1Jthmdc-CZpBoymeHEW06x9OTj8_lW7gM" />
             <p style="color:white">Email</p>
-        </li>
+        </li></a>
       </ul>
     </div>
+<!--Left Side Buttons End-->
+    
+
+
 <!--Left Side Buttons End-->
     
 
@@ -158,6 +166,9 @@ function myFunction() {
                                         <a class="dropdown-item" href="archive.html">English</a>
                                        
                                     </div>
+                                </li>
+								<li class="nav-item">
+                                    <a class="nav-link" href="#">Purvodaya</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="archive.html">Archive</a>
@@ -706,7 +717,154 @@ Humanity at crossroads</h6>
     <!-- ****** Single Blog Area End ****** -->
 
     <!-- ****** Instagram Area Start ****** -->
-     <footer class="footer_area">
+     <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #FF5733;
+  color: white;
+}
+.button {
+  background-color: #FF5733;
+  border: none;
+  color: white;
+  padding: 0px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Contact US</h2>
+    </div>
+    <div class="modal-body">
+      <p><b>Call US : <a href="tel:+918585876935">85858-76935</a></p>
+      <p>Mail US : <a href="mailto:iscsindiaoffice@gmail.com">iscsindiaoffice@gmail.com</a> </b> <p>
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+   
+    <!-- ****** Our Creative Portfolio Area End ****** -->
+
+  
+    <!-- ****** Footer Menu Area Start ****** -->
+   <footer class="footer_area">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -730,6 +888,9 @@ Humanity at crossroads</h6>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Occasional</a>
+                                    </li>
+									<li class="nav-item">
+                                        <a class="nav-link" href="#">Purvodaya</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Archive</a>
